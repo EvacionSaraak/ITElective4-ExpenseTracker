@@ -28,6 +28,13 @@
   color: #61dafb;
 }
 
+.button--unstyled {
+  padding: 0;
+  border: 0;
+  background: none;
+  box-shadow: none;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
