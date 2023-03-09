@@ -8,7 +8,7 @@ function ExpenseTodo({id = "N/A", name = "N/A", price = "N/A"}) {
     return (
         <div onClick={handleClick} style={{
             backgroundColor: "skyblue",
-            borderRadius: 5,
+            borderRadius: 7,
             textAlign: "justify",
             padding: 4,
             margin: 5,
