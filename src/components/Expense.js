@@ -9,28 +9,15 @@ function Expense() {
     // const [total, setTotal] = useState(0)
     return (
         <div>
-            <div >
-                <header align="center">Expenses from Data.js</header>
-            </div>
             <div>
-                <table id='dataTable'>
-                    <tbody>
-                        <tr>
-                            <th>ID</th>
-                            <th>Name</th>
-                            <th>Price</th>
-                        </tr>
-                        {data && data.map(({ id, name, price }) => (
-                            <ExpenseTodo id={id} name={name} price={price}/>
-                        ))}
-                        {data.map((data) => {totalPrice+=data.price})}
-                        <tr>
-                            <th>Total Price:</th>
-                            <td></td>
-                            <td>{totalPrice}</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <header align="center"><strong>Expenses</strong></header>
+            </div>
+            <br></br>
+            <div>
+                {data && data.map(({ id, name, price }) => (
+                    <ExpenseTodo id={id} name={name} price={price}/>
+                ))}
+                <strong>TOTAL: </strong>{data.map((data) => {totalPrice+=data.price})}{totalPrice}
             </div>
         </div>
     );
